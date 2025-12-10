@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Strawberry Kiwi",
+    "brand": "ElfBar",
+    "puffs": "5000",
+    "price": 1500,
+    "discount": 0,
+    "img": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    "id": 2,
+    "name": "Blue Razz Ice",
+    "brand": "GeekBar",
+    "puffs": "7000",
+    "price": 1800,
+    "discount": 10,
+    "img": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=600"
+  }
+]

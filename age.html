@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Age verification — J_VAPES</title>
+  <meta name="description" content="Age verification for J_VAPES. You must be 18+ to enter.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <main class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-md w-full bg-white border rounded-lg p-6 text-center shadow-lg">
+      <h1 class="text-2xl font-bold mb-2">Age verification</h1>
+      <p class="text-sm text-gray-600 mb-4">You must be 18 years or older to view J_VAPES. Confirm below to continue to the site.</p>
+      <div class="flex items-center justify-center gap-3">
+        <button id="leaveBtn" class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Leave</button>
+        <button id="confirmBtn" class="bg-gray-900 text-white px-4 py-2 rounded">I am 18+</button>
+      </div>
+      <div class="mt-3 text-xs text-gray-400">This page is hidden from search engines.</div>
+    </div>
+  </main>
+
+  <script>
+    // Age confirmation page script: set flag and redirect to index
+    document.getElementById('confirmBtn').addEventListener('click', function(){
+      try{ localStorage.setItem('jv_age_confirmed','1'); }catch(e){}
+      try{ window.location.href = 'index.html'; }catch(e){ window.location.href = './'; }
+    });
+    document.getElementById('leaveBtn').addEventListener('click', function(){
+      try{ window.location.href = 'https://www.google.com'; }catch(e){ window.close(); }
+    });
+  </script>
+</body>
+</html>
